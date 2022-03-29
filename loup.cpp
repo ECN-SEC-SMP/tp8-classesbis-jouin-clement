@@ -13,14 +13,14 @@ void Loup::setAttaque(){
 }
 
 void Loup::deplacer(int maxX, int maxY){
-  int x = rand() % 2 - 1;
-  int y = rand() % 2 - 1;
+  int x = rand() % 3 - 1;
+  int y = rand() % 3 - 1;
   
-  if((this->x + x) <= maxX){
+  if((this->x + x) <= maxX && (this->x + x) >= 0){
     this->x += x;
   }
 
-  if((this->y + y) <= maxY){
+  if((this->y + y ) <= maxY  && (this->x + x) >= 0){
     this->y += y;
   }
 }
