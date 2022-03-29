@@ -1,6 +1,6 @@
 #include "animal.h"
 
-Aniaml::Animal(int maxX, int maxY, int x, int y){
+Animal::Animal(int maxX, int maxY, int x, int y){
   if(maxX >= x){
     this->x = x;
   } else {
@@ -14,20 +14,20 @@ Aniaml::Animal(int maxX, int maxY, int x, int y){
   }
 }
 
-Aniaml::Aniaml(int maxX, int maxY){
+Animal::Animal(int maxX, int maxY){
   this->x = 0;
   this->y = 0;
 }
 
-int Aniaml::getX() const{
+int Animal::getX() const{
   return this->x;    
 }
 
-int Aniaml::getY() const{
+int Animal::getY() const{
     return this->y;
 }
 
-bool Aniaml::getVivant() const{
+bool Animal::getVivant() const{
     return this->vivant;
 }
 

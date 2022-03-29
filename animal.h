@@ -4,13 +4,13 @@
 #define animal_h
 
 class Animal{
-private:
+protected:
   int x, y; //position
   bool vivant;
 
 public:
   Animal(int maxX, int maxY, int x, int y);
-  Aniaml(int maxX, int maxY);
+  Animal(int maxX, int maxY);
 
   int getX() const;
   int getY() const;
@@ -18,8 +18,8 @@ public:
 
   void setVivant(bool v);
   bool attaque(Animal &a);
-  virtual void setAttaque();
-  virtual void deplacer(int maxX, int maxY);
+  virtual void setAttaque()=0;
+  virtual void deplacer(int maxX, int maxY)=0;
 };
 
 #endif
