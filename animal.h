@@ -1,11 +1,12 @@
 #include <iostream>
+#include "vecteur.h"
 
 #ifndef animal_h
 #define animal_h
 
 class Animal{
 protected:
-  int x, y; //position
+  Vecteur * position;
   bool vivant;
 
 public:

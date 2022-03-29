@@ -16,11 +16,11 @@ void Ours::deplacer(int maxX, int maxY){
   int x = rand() % 3 - 1;
   int y = rand() % 3 - 1;
   
-  if((this->x + x) <= maxX && (this->x + x) >= 0){
-    this->x += x;
+  if((this-> position -> x + x) <= maxX && (this-> position -> x + x) >= 0){
+    this-> position -> x += x;
   }
 
-  if((this->y + y ) <= maxY  && (this->x + x) >= 0){
-    this->y += y;
+  if((this-> position -> y + y ) <= maxY  && (this-> position -> y+ x) >= 0){
+    this-> position ->y += y;
   }
 }

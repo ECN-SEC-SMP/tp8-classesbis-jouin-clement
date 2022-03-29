@@ -14,7 +14,7 @@ int main(){
   Lion * lion = new Lion(MAXX, MAXY, MAXX/2, MAXY/2);
   Ours * ours = new Ours(MAXX, MAXY, MAXX/2, MAXY/2);
 
-  for(int i = 0; i < 1; i++){
+  for(int i = 0; i < 5; i++){
     loup -> deplacer(MAXX, MAXY);
     cout << "loup position x :" << loup -> getX() << ", y : " << loup -> getY() << endl;
 

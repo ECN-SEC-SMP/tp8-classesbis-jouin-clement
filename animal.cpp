@@ -1,30 +1,33 @@
 #include "animal.h"
 
 Animal::Animal(int maxX, int maxY, int x, int y){
+  this->position = new Vecteur();
   if(maxX >= x){
-    this->x = x;
+    this -> position -> x = x;
   } else {
-    this->x = maxX;
+    this-> position -> x = maxX;
   }
 
   if(maxY >= y){
-    this->y = y;
+    this -> position -> y = y;
   } else {
-    this->y = maxY;
+    this -> position -> y = maxY;
   }
+
+  cout << "position : " << *(this->position) << endl;
 }
 
 Animal::Animal(int maxX, int maxY){
-  this->x = 0;
-  this->y = 0;
+  this->position = new Vecteur();
+  cout << "position : " << *(this->position) << endl;
 }
 
 int Animal::getX() const{
-  return this->x;    
+  return this->position->x;    
 }
 
 int Animal::getY() const{
-    return this->y;
+    return this->position->y;
 }
 
 bool Animal::getVivant() const{
