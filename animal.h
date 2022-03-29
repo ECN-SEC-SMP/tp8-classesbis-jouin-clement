@@ -9,7 +9,7 @@ private:
   bool vivant;
 
 public:
-  Animal(int maxX, int maxY, int a, int b);
+  Animal(int maxX, int maxY, int x, int y);
   Aniaml(int maxX, int maxY);
 
   int getX() const;
