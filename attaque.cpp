@@ -18,18 +18,18 @@ attaque::attaque(int a ){
 }
 
 string getNomAttaque() {
-  if ((this -> attaque) == 0){
+  if ((this -> type) == 0){
     return "pierre";}
-  else if ((this -> attaque) == 1){
+  else if ((this -> type) == 1){
       return "feuille";}
-  else if ((this -> attaque) == 2){
+  else if ((this -> type) == 2){
       return "ciseau";}
 }
 
 //Choisi le gagnant 0 :pierre, 1: Feuille, 2: Ciseaux
 bool resoudreAttaque(Attaque &a){
   int r;
-  if ((this -> attaque) == 0){
+  if ((this -> type) == 0){
     if (a == 0){
       r = random()%2;
       return r!=0}   
@@ -38,7 +38,7 @@ bool resoudreAttaque(Attaque &a){
     else if (a==2){
       return false;}
     }
-  else if ((this -> attaque) == 1){
+  else if ((this -> type) == 1){
     if (a == 0){
       return false;}
     else if (a == 1){
@@ -47,7 +47,7 @@ bool resoudreAttaque(Attaque &a){
     else if (a == 2){
       return true;}
   }
-  else if ((this -> attaque) == 2){
+  else if ((this -> type) == 2){
     if (a == 0){
       return true;}
     else if (a == 1){
